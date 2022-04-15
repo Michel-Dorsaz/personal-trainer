@@ -60,11 +60,11 @@ function Statistics() {
         },
         total:{
             data:[],
-            title:"Total per activity"
+            title:"Total duration per activity"
         },
         average:{
             data:[],
-            title:"Average per activity"
+            title:"Average duration per activity"
         }
     });
 
@@ -157,7 +157,7 @@ function Statistics() {
                         sx={{backgroundColor:'greenyellow', mx: 2}}
                         onClick={(event) => setSeriesData(event.target.name)}
                     >
-                    Total per activity
+                    Total duration per activity
                     </Button>
                     <Button
                         name='average'
@@ -165,7 +165,7 @@ function Statistics() {
                         sx={{backgroundColor:'greenyellow', mx: 2}}
                         onClick={(event) => setSeriesData(event.target.name)}
                     >
-                    Average per activity
+                    Average duration per activity
                     </Button>
                                   
                     <h1>{title}</h1>
