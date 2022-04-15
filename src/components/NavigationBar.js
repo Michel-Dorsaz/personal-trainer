@@ -14,7 +14,8 @@ function NavigationBar({ AddComponent, ExportComponent }) {
     const links = [
         { title: "Customers", path: "/customers" },
         { title: "Trainings", path: "/trainings" },
-        { title: "Calendar", path: "/calendar" }
+        { title: "Calendar", path: "/calendar" },
+        { title: "Statistics", path: "/statistics" }
       ];
   
     const navigate = useNavigate();
@@ -38,8 +39,7 @@ function NavigationBar({ AddComponent, ExportComponent }) {
                         sx={{ my: 2}}
                         key={index}
                         variant='button'
-                        onClick={() => navigate(link.path)}
-                        
+                        onClick={() => navigate(link.path)}                  
                     >
                     {link.title}
                     </Button>

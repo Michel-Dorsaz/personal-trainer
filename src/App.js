@@ -5,6 +5,7 @@ import Trainings from './components/Trainings.js';
 import PageNotFound from './components/PageNotFound';
 import CustomerTrainings from './components/CustomerTrainings';
 import TrainingsCalendar from './components/TrainingsCalendar';
+import Statistics from './components/Statistics';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Route path="/customers" element={<Customers />} />
           <Route path="/trainings" element={<Trainings />} />
           <Route path="/trainings/*" element={<CustomerTrainings />} />   
+          <Route path="/statistics" element={<Statistics />} />
           <Route path="/calendar" element={<TrainingsCalendar />} />      
           <Route path="*" element={<PageNotFound />} />
       </Routes>
